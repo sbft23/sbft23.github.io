@@ -23,7 +23,7 @@ email: giovaniguizzo@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   The homepage of the 16th Search-Based and Fuzz Testing (SBFT) Workshop.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://sbft24.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://sbft23.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
