@@ -1,0 +1,58 @@
+---
+title: SBFT'23 Organisation
+layout: default
+---
+
+<div class="col-md-8 ml-auto mr-auto text-left">
+  <div class="section section-team text-center">
+    <div class="container">
+      <h2 class="subtitle">Workshop Co-Chairs</h2>
+      <div class="team">
+        <div class="row">
+          {% assign members = site.data.organisation.cochairs | sort: "name" %}
+          {% for member in members %}
+          {%- include member.html -%}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <h2 class="subtitle">Competition Co-Chairs</h2>
+      <div class="team">
+        <div class="row">
+          {% assign members = site.data.organisation.competition | sort: "name" %}
+          {% for member in members %}
+          {%- include member.html -%}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <h2 class="subtitle">Website Chair</h2>
+      <div class="team">
+        <div class="row">
+          {% assign members = site.data.organisation.webchair | sort: "name" %}
+          {% for member in members %}
+          {%- include member.html -%}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="container">
+      <h2 class="subtitle text-center">Program Committee</h2>
+      <div class="table-condensed">
+        <table class="committee-table">
+          {% assign members = site.data.organisation.pc | sort: "name" %}
+          {% for member in members %}
+          <tr>
+            <td><a target="_blank" href="{{member.webpage}}">{{member.name}}</a>, {{member.institution}}</td>
+          </tr>
+          {% endfor %}
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
