@@ -6,11 +6,12 @@ layout: default
 
   <h1 class="title">Tool Competition</h1>
 
-  <p>This year as well we are pleased to announce the tenth edition of the testing tool competition. The
+  <p>This year as well we are pleased to announce the eleventh edition of the testing tool competition. The
     competition has the goal to experiment with testing tools for a diversified set of traditional and
     emerging systems and domains.</p>
 
-  <p><strong>Java tool competition</strong>: As for recent years, we invite researchers to participate in the
+  <h2>Java Tool Competition</h2>
+  <p>As for recent years, we invite researchers to participate in the
     competition with their unit test generation tool for <strong><em>Java</em></strong>. Tools will be
     evaluated against a benchmark with respect to code coverage and mutation score.</p>
 
@@ -18,7 +19,8 @@ layout: default
     <img src="../img/java.png" title="Java test example" alt="Java test example" />
   </p>
 
-  <p><strong>Cyber-physical systems (CPS) testing competition</strong>: In addition to the traditional Java
+  <h2>Cyber-physical systems (CPS) testing competition</h2>
+  <p>In addition to the traditional Java
     tool competition, we also organize a CPS testing competition on self-driving cars simulation environments.
     Specifically, in collaboration with the <a href="https://beamng.gmbh/research/ " target="_blank">BeamNG
       research team</a>, this competition focuses on the generation of scenarios using BeamNG self-driving
@@ -30,8 +32,16 @@ layout: default
     <img src="../img/beam-2.png" alt="Beam-NG Visual 2" title="Beam-NG Visual 2" />
   </p>
 
-  <p><strong>Fuzzing Competition</strong>: Starting this year, we will hold a Fuzzing Tool competition.
-    More info TBA.
+  <h2>Fuzzing Competition</h2>
+  <p>Starting this year, we will hold a Fuzzing Tool competition.
+    We are going to use <a href="https://google.github.io/fuzzbench/" target="_blank">FuzzBench</a> as a benchmarking
+    tool for the fuzzers.
+    The details on how to submit your fuzzer can be found here: <a href="https://github.com/mboehme/FuzzingCompetition"
+      target="_blank">GitHub Repository</a>
+  </p>
+
+  <p style="text-align: center;">
+    <img src="/img/fuzzbench.png" alt="FuzzBench" title="Fuzzbench" />
   </p>
 
   <h2>How to participate in the competitions?</h2>
@@ -42,34 +52,38 @@ layout: default
         href="mailto:gunel.jahangirova@usi.ch, v.terragni@auckland.ac.nz" target="_blank">gunel.jahangirova@usi.ch,
         v.terragni@auckland.ac.nz</a>).
     </li>
-    <li><b>CPS:</b> notify the organizers by sending an email to Vincenzo Riccio (<a
-        href="mailto:vincenzo.riccio@usi.ch" target="_blank">vincenzo.riccio@usi.ch</a>).
+    <li><b>CPS:</b> notify the organizers by sending an email to Vincenzo Riccio, Matteo Biagiola, Stefan Klikovits,
+      Jarkko Peltomäki (<a
+        href="mailto:vincenzo.riccio@usi.ch, matteo.biagiola@usi.ch, stefan@klikovits.net, jarkko.peltomaki@abo.fi"
+        target="_blank">vincenzo.riccio@usi.ch, matteo.biagiola@usi.ch, stefan@klikovits.net,
+        jarkko.peltomaki@abo.fi</a>).
     </li>
-    <li><b>Fuzzing:</b> notify the organizers by sending an email to Abhishek Arya and Marcel Böhme (<a
-        href="mailto:marcel.boehme@mpi-sp.org, aarya@google.com" target="_blank">marcel.boehme@mpi-sp.org,
-        aarya@google.com</a>).
-    </li>
-    <li>check out the contest infrastructure and make sure your tool works well within the infrastructure.
+    <li><b>Fuzzing:</b> notify the organizers by sending an email to Abhishek Arya, Marcel Böhme, Dongge Liu and Oliver
+      Chang (<a href="mailto:marcel.boehme@mpi-sp.org, aarya@google.com, alan32.liu@gmail.com"
+        target="_blank">marcel.boehme@mpi-sp.org,
+        aarya@google.com, alan32.liu@gmail.com</a>).
     </li>
   </ul>
+  Check out the contest infrastructure and make sure your tool works well within it.
   </p>
 
-  <h2>Java Infrastructure:</h2>
+  <h4>Java Infrastructure:</h4>
 
   <p>The infrastructure concerning the Java tool competition is available on GitHub and can also be tried
     using Docker: <a href="https://github.com/JUnitContest/junitcontest"
       target="_blank">https://github.com/JUnitContest/junitcontest</a>. It is important to note that some
     changes are expected to the infrastructure during the end of 2022 and during the beginning of 2023.</p>
 
-  <h2>CPS Infrastructure:</h2>
+  <h4>CPS Infrastructure:</h4>
 
   <p>The infrastructure concerning the CPS tool competition can be found here: <a
       href="https://github.com/se2p/tool-competition-av"
       target="_blank">https://github.com/se2p/tool-competition-av</a>.</p>
 
-  <h2>Fuzzing Infrastructure:</h2>
+  <h4>Fuzzing Infrastructure:</h4>
 
-  <p>TBA</p>
+  <p>Details on how to integrate your fuzzer in the benchmarking infrastructure can be found in this <a
+      href="https://github.com/mboehme/FuzzingCompetition" target="_blank">GitHub Repository</a>.</p>
 
   <h2>Important Dates</h2>
 

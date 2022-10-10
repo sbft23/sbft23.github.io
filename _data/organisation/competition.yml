@@ -26,6 +26,7 @@
 - name: Matteo Biagiola
   webpage: https://scholar.google.com/citations?user=1mn0tisAAAAJ&hl=en
   institution: Università della Svizzera Italiana, Switzerland
+  pic: /img/biagiola.jpg
 
 - name: Stefan Klikovits
   webpage: https://klikovits.net/
@@ -36,3 +37,13 @@
   webpage: http://www.turambar.org/jarkko/
   institution: Åbo Akademi, Finland
   pic: /img/jarko.jpg
+
+- name: Oliver Chang
+  webpage: https://www.linkedin.com/in/oliver-chang-450036a7/?originalSubdomain=au
+  institution: Google, Australia
+  pic: /img/oliver.jfif
+
+- name: Dongge Liu
+  webpage: https://www.linkedin.com/in/dongge-liu-9a957913a/?originalSubdomain=au
+  institution: Google, Australia
+  pic: /img/dongge.jfif
