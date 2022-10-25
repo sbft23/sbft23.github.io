@@ -6,7 +6,7 @@ layout: md
 
 ## tl;dr
 
-* Register here: https://forms.gle/QZgUYysoBizeAKRu9 (Deadline: **AoE Friday 6th Jan 2023**)
+* Register here: [Registration Form](https://forms.gle/QZgUYysoBizeAKRu9) (Deadline: **AoE Friday 6th Jan 2023**)
 * Write a fuzzer for C/C++ programs (or choose an existing fuzzer).
 * Integrate it into [FuzzBench](https://google.github.io/fuzzbench/getting-started/adding-a-new-fuzzer/)
 * Maximize number of bugs found and coverage achieved in 23 hours.
@@ -64,7 +64,7 @@ to submit to the competition. The tool report is submitted as part of the regist
 PR](https://github.com/google/fuzzbench/compare). We encourage you to start early and check your code with our CI
 tests, but you can edit your PR at any time before the day of the competition (24th Feb.). Feel free to push the
 fuzzer implementation itself just right before the deadline.
-3. Register here: https://forms.gle/QZgUYysoBizeAKRu9
+3. Register here: [Registration Form](https://forms.gle/QZgUYysoBizeAKRu9)
 
 
 **Preliminaries**. First, we encourage every participant to get familiar with the
