@@ -1,7 +1,3 @@
----
-title: SBFT'23 Fuzzing Competition Instructions
-layout: md
----
 # Fuzzing Competition (C/C++ Programs)
 
 ## tl;dr
@@ -36,19 +32,22 @@ For our competition, we use Google's [FuzzBench](https://google.github.io/fuzzbe
 * The *fuzz harnesses* which translate the fuzz inputs via `LLVMFuzzerTestOneInput` into executions of the programs,
 * The *sanitizers* (i.e., detectors or oracles) that turn a buggy execution into a program crash. Bugs found by custom participant-specific sanitizers will be ignored.
 * The *docker infrastructure* which
-  * builds an arbitrary program with (your) fuzzer-specific instrumentation,
-  * runs a specified set of fuzzers on a specified set of programs for a specified time,
-  * collects code coverage and bug-finding information.
+* builds an arbitrary program with (your) fuzzer-specific instrumentation,
+* runs a specified set of fuzzers on a specified set of programs for a specified time,
+* collects code coverage and bug-finding information.
 
 **Related work**
-* [ESEC/FSE'21] "[FuzzBench: An Open Fuzzer Benchmarking Platform and Service](https://research.google/pubs/pub50600.pdf)",<br/> J. Metzman, L. Szekeres, L.M.R. Simon, R.T. Sprabery, and A. Arya.
-* [ICSE'22] "[On the Reliability of Coverage-Based Fuzzer Benchmarking](https://mboehme.github.io/paper/ICSE22.pdf)"<br/> M. B&ouml;hme, L. Szekeres, and J. Metzman.
-* [CCS'18] "[Evaluating Fuzz Testing](https://dl.acm.org/doi/10.1145/3243734.3243804)"<br/> G. Klees, A. Ruef, B. Cooper, S. Wei, M. Hicks
+* [ESEC/FSE'21] "[FuzzBench: An Open Fuzzer Benchmarking Platform and Service](https://research.google/pubs/pub50600.pdf)",
+J. Metzman, L. Szekeres, L.M.R. Simon, R.T. Sprabery, and A. Arya.
+* [ICSE'22] "[On the Reliability of Coverage-Based Fuzzer Benchmarking](https://mboehme.github.io/paper/ICSE22.pdf)"
+M. Böhme, L. Szekeres, and J. Metzman.
+* [CCS'18] "[Evaluating Fuzz Testing](https://dl.acm.org/doi/10.1145/3243734.3243804)"
+G. Klees, A. Ruef, B. Cooper, S. Wei, M. Hicks
 
 
 
 ## Competition Process
-**Registration** (by 6 January). 
+**Registration** (by 13 January). 
 1. Please prepare a short "tool report" (up to 2 pages in [IEEE conference format](https://www.ieee.org/conferences/publishing/templates.html); `\documentclass[10pt,conference]{IEEEtran}` without including the compsoc or compsocconf options) describing the technology and ideas behind the fuzzer you want to submit to the competition. The tool report should be sent to sbft23fuzzcomp@googlegroups.com as part of the registration. Please format your email subject as '[Report submission] {Fuzzer Name}'.
 2. Please open a pull request (PR) by [forking FuzzBench](https://github.com/google/fuzzbench/fork) and [submitting a PR](https://github.com/google/fuzzbench/compare). We encourage you to start early and check your code with our CI tests, but you can edit your PR at any time before the day of the competition (24 Feb.). Feel free to push the fuzzer implementation itself just right before the deadline. If there is any question regarding your PR, please let us know via sbft23fuzzcomp@googlegroups.com and format your email subject as '[PR Query] {Fuzzer Name}'.
 3. Register [here](https://forms.gle/bzbro1zAXoCxLBHd8). For registration questions, please let us know via sbft23fuzzcomp@googlegroups.com and format your email subject as '[Registration query] {Fuzzer Name}'.
@@ -67,8 +66,7 @@ For our competition, we use Google's [FuzzBench](https://google.github.io/fuzzbe
 **Results**. Finally, the winners will be announced live during the workshop in May.
 
 ## Prizes and awards
-Will be announced later. Stay tuned!
-
+Top-performing participants will be eligible to be considered for a new OSS-Fuzz FuzzBench reward (up to $11,337, depending on impact).
 
 ## Organizers
 The fuzzing competition is organized jointly by Abhishek Arya (Google), Oliver Chang (Google), Jonathan Metzman (Google), Dongge Liu (Google), and Marcel Böhme (MPI-SP).
