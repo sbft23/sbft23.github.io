@@ -48,7 +48,7 @@ For our competition, we use Google's [FuzzBench](https://google.github.io/fuzzbe
 
 
 ## Competition Process
-**Registration** (by 6 January). 
+**Registration** (by 13 January). 
 1. Please prepare a short "tool report" (up to 2 pages in [IEEE conference format](https://www.ieee.org/conferences/publishing/templates.html); `\documentclass[10pt,conference]{IEEEtran}` without including the compsoc or compsocconf options) describing the technology and ideas behind the fuzzer you want to submit to the competition. The tool report should be sent to sbft23fuzzcomp@googlegroups.com as part of the registration. Please format your email subject as '[Report submission] {Fuzzer Name}'.
 2. Please open a pull request (PR) by [forking FuzzBench](https://github.com/google/fuzzbench/fork) and [submitting a PR](https://github.com/google/fuzzbench/compare). We encourage you to start early and check your code with our CI tests, but you can edit your PR at any time before the day of the competition (24 Feb.). Feel free to push the fuzzer implementation itself just right before the deadline. If there is any question regarding your PR, please let us know via sbft23fuzzcomp@googlegroups.com and format your email subject as '[PR Query] {Fuzzer Name}'.
 3. Register [here](https://forms.gle/bzbro1zAXoCxLBHd8). For registration questions, please let us know via sbft23fuzzcomp@googlegroups.com and format your email subject as '[Registration query] {Fuzzer Name}'.
