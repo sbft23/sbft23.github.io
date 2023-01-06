@@ -1,9 +1,14 @@
+---
+title: SBFT'23 Fuzzing Competition Instructions
+layout: md
+---
+
 # Fuzzing Competition (C/C++ Programs)
 
 ## tl;dr
 
 * Express your interest [here](https://forms.gle/bzbro1zAXoCxLBHd8) (Deadline: **AoE Friday 13 Jan 2023**).
-* Write a fuzzer for C/C++ programs (or choose an existing fuzzer).
+* Write a fuzzer for C/C++ programs (or choose an existing fuzzer and _make your own novel modifications_).
 * Maximize the number of bugs found and coverage achieved in 23 hours.
 * Integrate fuzzer into [FuzzBench](https://google.github.io/fuzzbench/getting-started/adding-a-new-fuzzer/) (Deadline: **AoE Friday 24 Feb 2023**).
 * Competition results will be reported live at SBST'23.
@@ -32,17 +37,14 @@ For our competition, we use Google's [FuzzBench](https://google.github.io/fuzzbe
 * The *fuzz harnesses* which translate the fuzz inputs via `LLVMFuzzerTestOneInput` into executions of the programs,
 * The *sanitizers* (i.e., detectors or oracles) that turn a buggy execution into a program crash. Bugs found by custom participant-specific sanitizers will be ignored.
 * The *docker infrastructure* which
-* builds an arbitrary program with (your) fuzzer-specific instrumentation,
-* runs a specified set of fuzzers on a specified set of programs for a specified time,
-* collects code coverage and bug-finding information.
+  * builds an arbitrary program with (your) fuzzer-specific instrumentation,
+  * runs a specified set of fuzzers on a specified set of programs for a specified time,
+  * collects code coverage and bug-finding information.
 
 **Related work**
-* [ESEC/FSE'21] "[FuzzBench: An Open Fuzzer Benchmarking Platform and Service](https://research.google/pubs/pub50600.pdf)",
-J. Metzman, L. Szekeres, L.M.R. Simon, R.T. Sprabery, and A. Arya.
-* [ICSE'22] "[On the Reliability of Coverage-Based Fuzzer Benchmarking](https://mboehme.github.io/paper/ICSE22.pdf)"
-M. Böhme, L. Szekeres, and J. Metzman.
-* [CCS'18] "[Evaluating Fuzz Testing](https://dl.acm.org/doi/10.1145/3243734.3243804)"
-G. Klees, A. Ruef, B. Cooper, S. Wei, M. Hicks
+* [ESEC/FSE'21] "[FuzzBench: An Open Fuzzer Benchmarking Platform and Service](https://research.google/pubs/pub50600.pdf)",<br/> J. Metzman, L. Szekeres, L.M.R. Simon, R.T. Sprabery, and A. Arya.
+* [ICSE'22] "[On the Reliability of Coverage-Based Fuzzer Benchmarking](https://mboehme.github.io/paper/ICSE22.pdf)"<br/> M. B&ouml;hme, L. Szekeres, and J. Metzman.
+* [CCS'18] "[Evaluating Fuzz Testing](https://dl.acm.org/doi/10.1145/3243734.3243804)"<br/> G. Klees, A. Ruef, B. Cooper, S. Wei, M. Hicks
 
 
 
@@ -55,7 +57,7 @@ G. Klees, A. Ruef, B. Cooper, S. Wei, M. Hicks
 
 **Preliminaries**. First, we encourage every participant to get familiar with the [FuzzBench](https://github.com/google/fuzzbench) infrastructure. Create a [private fork](https://github.com/new/import) of the FuzzBench repository. Install [prerequisites](https://google.github.io/fuzzbench/getting-started/prerequisites/). You can now run one fuzzer (e.g., [`AFL`](https://github.com/google/fuzzbench/tree/master/fuzzers/afl)) on one program (e.g., [`libpng-1.2.56`](https://github.com/google/fuzzbench/tree/master/benchmarks/libpng-1.2.56)) using [`make run-afl-libpng-1.2.56`](https://google.github.io/fuzzbench/getting-started/adding-a-new-fuzzer/#testing-it-out). Get familiar with [fuzzer integration](https://google.github.io/fuzzbench/getting-started/adding-a-new-fuzzer/) to integrate your own fuzzer into FuzzBench. Get familiar with the [local setup](https://google.github.io/fuzzbench/running-a-local-experiment) to run multiple fuzzers, including yours, on multiple programs and get coverage and bug-finding reports.
 
-**Preparation**. The participants are encouraged to use the [programs](https://github.com/google/fuzzbench/tree/master/benchmarks) and infrastructure available at FuzzBench for their [local evaluation](https://google.github.io/fuzzbench/running-a-local-experiment). The participants can submit new fuzzers, or add or extend existing fuzzers. The participants are allowed to modify the compilation of the programs to inject execution feedback for the fuzzer. During development, regularly make sure that [`make presubmit`](https://google.github.io/fuzzbench/getting-started/contributing-code/#running-unit-tests) succeeds and it can [build on benchmark programs](https://google.github.io/fuzzbench/getting-started/adding-a-new-fuzzer/#testing-it-out). It can be quite pedantic and you don't want to be failed due to trivial errors.
+**Preparation**. The participants are encouraged to use the [programs](https://github.com/google/fuzzbench/tree/master/benchmarks) and infrastructure available at FuzzBench for their [local evaluation](https://google.github.io/fuzzbench/running-a-local-experiment). The participants can submit new fuzzers, or extend existing fuzzers with their own novel ideas. The participants are allowed to modify the compilation of the programs to inject execution feedback for the fuzzer. During development, regularly make sure that [`make presubmit`](https://google.github.io/fuzzbench/getting-started/contributing-code/#running-unit-tests) succeeds and it can [build on benchmark programs](https://google.github.io/fuzzbench/getting-started/adding-a-new-fuzzer/#testing-it-out). It can be quite pedantic and you don't want to be failed due to trivial errors.
 
 **Competition** (on 24 February 2023).
 * The participants publicly integrate their fuzzers into FuzzBench by submitting a [Pull Request](https://github.com/google/fuzzbench/pulls) and getting it approved for integration. We will only consider fuzzers that passed all CI tests in the PR and that run for at least 30 minutes.
