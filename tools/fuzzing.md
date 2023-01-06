@@ -7,7 +7,7 @@ layout: md
 
 ## tl;dr
 
-* Express your interest [here](https://forms.gle/bzbro1zAXoCxLBHd8) (Deadline: **AoE Friday 13 Jan 2023**).
+* Express your interest [here](https://forms.gle/bzbro1zAXoCxLBHd8) (Deadline: **AoE Friday 20 Jan 2023**).
 * Write a fuzzer for C/C++ programs (or choose an existing fuzzer and _make your own novel modifications_).
 * Maximize the number of bugs found and coverage achieved in 23 hours.
 * Integrate fuzzer into [FuzzBench](https://google.github.io/fuzzbench/getting-started/adding-a-new-fuzzer/) (Deadline: **AoE Friday 24 Feb 2023**).
@@ -15,8 +15,8 @@ layout: md
 
 
 ## Timeline
-* 13 Jan'23: Registration deadline.
-* 16 Jan'23: Notification of acceptance.
+* 20 Jan'23: Registration deadline.
+* 23 Jan'23: Notification of acceptance.
 * 24 Feb'23: First Pull Request deadline (PR must be accepted at FuzzBench).
 * 03 Mar'23: Preliminary results on public benchmarks.
 * 10 Mar'23: Second Pull Request deadline.
@@ -49,7 +49,7 @@ For our competition, we use Google's [FuzzBench](https://google.github.io/fuzzbe
 
 
 ## Competition Process
-**Registration** (by 13 January). 
+**Registration** (by 20 January). 
 1. Please prepare a short "tool report" (up to 2 pages in [IEEE conference format](https://www.ieee.org/conferences/publishing/templates.html); `\documentclass[10pt,conference]{IEEEtran}` without including the compsoc or compsocconf options) describing the technology and ideas behind the fuzzer you want to submit to the competition. The tool report should be sent to sbft23fuzzcomp@googlegroups.com as part of the registration. Please format your email subject as '[Report submission] {Fuzzer Name}'.
 2. Please open a pull request (PR) by [forking FuzzBench](https://github.com/google/fuzzbench/fork) and [submitting a PR](https://github.com/google/fuzzbench/compare). We encourage you to start early and check your code with our CI tests, but you can edit your PR at any time before the day of the competition (24 Feb.). Feel free to push the fuzzer implementation itself just right before the deadline. If there is any question regarding your PR, please let us know via sbft23fuzzcomp@googlegroups.com and format your email subject as '[PR Query] {Fuzzer Name}'.
 3. Register [here](https://forms.gle/bzbro1zAXoCxLBHd8). For registration questions, please let us know via sbft23fuzzcomp@googlegroups.com and format your email subject as '[Registration query] {Fuzzer Name}'.
