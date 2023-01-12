@@ -68,7 +68,7 @@ For our competition, we use Google's [FuzzBench](https://google.github.io/fuzzbe
 **Results**. Finally, the winners will be announced live during the workshop in May.
 
 ## Prizes and awards
-Top-performing participants will be eligible to be considered for a new OSS-Fuzz FuzzBench reward (up to $11,337, depending on impact).
+Top-performing participants will be eligible to be considered for a new OSS-Fuzz [**_FuzzBench integration reward_**](https://bughunters.google.com/about/rules/5097259337383936/oss-fuzz-reward-program-rules) (up to $11,337, depending on impact).
 
 ## Organizers
 The fuzzing competition is organized jointly by Abhishek Arya (Google), Oliver Chang (Google), Jonathan Metzman (Google), Dongge Liu (Google), and Marcel Böhme (MPI-SP).
