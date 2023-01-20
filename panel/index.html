@@ -2,14 +2,19 @@
 title: SBFT'23 Discussion Panel
 layout: default
 ---
-<div class="col-md-8 ml-auto mr-auto text-left">
-
-    <div class="section section-team text-left">
-        <div class="container">
-            <h1 class="title">Discussion Panel</h1>
-            TBA
-
-            <br>
+<div class="col-md-8 ml-auto mr-auto text-center">
+    <h1 class="title">Discussion Panel</h1>
+    <h2>Testing and Security for Cyber-Physical Systems</h2>
+    <p></p>
+    <div class="section section-team">
+        <h2 class="subtitle">Panellists</h2>
+        <div class="team">
+            <div class="row">
+                {% assign members = site.data.panellists | sort: "name" %}
+                {% for member in members %}
+                {%- include member.html -%}
+                {% endfor %}
+            </div>
         </div>
     </div>
 </div>
