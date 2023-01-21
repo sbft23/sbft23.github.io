@@ -40,6 +40,18 @@ layout: default
         </div>
       </div>
     </div>
+     <br>
+    <div class="container">
+      <h2 class="subtitle">Virtualisation Support & Student Volunteer</h2>
+      <div class="team">
+        <div class="row">
+          {% assign members = site.data.organisation.virtualisation | sort: "name" %}
+          {% for member in members %}
+          {%- include member.html -%}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
     <br><br>
     <div class="container">
       <h2 class="subtitle text-center">Program Committee</h2>
