@@ -10,17 +10,17 @@ layout: md
 * Express your interest [here](https://forms.gle/bzbro1zAXoCxLBHd8) (Deadline: **AoE Friday 20 Jan 2023**).
 * Write a fuzzer for C/C++ programs (or choose an existing fuzzer and _make your own novel modifications_).
 * Maximize the number of bugs found and coverage achieved in 23 hours.
-* Integrate fuzzer into [FuzzBench](https://google.github.io/fuzzbench/getting-started/adding-a-new-fuzzer/) (Deadline: **AoE Friday 24 Feb 2023**).
+* Integrate fuzzer into [FuzzBench](https://google.github.io/fuzzbench/getting-started/adding-a-new-fuzzer/) (Deadline: **AoE Friday 17 Feb 2023**).
 * Competition results will be reported live at SBST'23.
 
 
 ## Timeline
 * 20 Jan'23: Registration deadline.
 * 23 Jan'23: Notification of acceptance.
-* 24 Feb'23: First Pull Request deadline (PR must be accepted at FuzzBench).
-* 03 Mar'23: Preliminary results on public benchmarks.
-* 10 Mar'23: Second Pull Request deadline.
-* 15 Mar'23: Tool report deadline.
+* 17 Feb'23: First Pull Request deadline (PR must be accepted at FuzzBench).
+* 24 Mar'23: Preliminary results on public benchmarks.
+* 03 Mar'23: Second Pull Request deadline.
+* 10 Mar'23: Tool report deadline.
 * May'23: Official competition results and tool presentation live at SBFT workshop.
 
 ## Benchmarking Platform
@@ -49,9 +49,9 @@ For our competition, we use Google's [FuzzBench](https://google.github.io/fuzzbe
 
 
 ## Competition Process
-**Registration** (by 20 January). 
+**Registration** (by 20 January).
 1. Please prepare a short "tool report" (up to 2 pages in [IEEE conference format](https://www.ieee.org/conferences/publishing/templates.html); `\documentclass[10pt,conference]{IEEEtran}` without including the compsoc or compsocconf options) describing the technology and ideas behind the fuzzer you want to submit to the competition. The tool report should be sent to sbft23fuzzcomp@googlegroups.com as part of the registration. Please format your email subject as '[Report submission] {Fuzzer Name}'.
-2. Please open a pull request (PR) by [forking FuzzBench](https://github.com/google/fuzzbench/fork) and [submitting a PR](https://github.com/google/fuzzbench/compare). We encourage you to start early and check your code with our CI tests, but you can edit your PR at any time before the day of the competition (24 Feb.). Feel free to push the fuzzer implementation itself just right before the deadline. If there is any question regarding your PR, please let us know via sbft23fuzzcomp@googlegroups.com and format your email subject as '[PR Query] {Fuzzer Name}'.
+2. Please open a pull request (PR) by [forking FuzzBench](https://github.com/google/fuzzbench/fork) and [submitting a PR](https://github.com/google/fuzzbench/compare). We encourage you to start early and check your code with our CI tests, but you can edit your PR at any time before the pull request deadline (17 Feb). Feel free to push the fuzzer implementation itself just right before the deadline. If there is any question regarding your PR, please let us know via sbft23fuzzcomp@googlegroups.com and format your email subject as '[PR Query] {Fuzzer Name}'.
 3. Register [here](https://forms.gle/bzbro1zAXoCxLBHd8). For registration questions, please let us know via sbft23fuzzcomp@googlegroups.com and format your email subject as '[Registration query] {Fuzzer Name}'.
 
 
@@ -59,7 +59,7 @@ For our competition, we use Google's [FuzzBench](https://google.github.io/fuzzbe
 
 **Preparation**. The participants are encouraged to use the [programs](https://github.com/google/fuzzbench/tree/master/benchmarks) and infrastructure available at FuzzBench for their [local evaluation](https://google.github.io/fuzzbench/running-a-local-experiment). The participants can submit new fuzzers, or extend existing fuzzers with their own novel ideas. The participants are allowed to modify the compilation of the programs to inject execution feedback for the fuzzer. During development, regularly make sure that [`make presubmit`](https://google.github.io/fuzzbench/getting-started/contributing-code/#running-unit-tests) succeeds and it can [build on benchmark programs](https://google.github.io/fuzzbench/getting-started/adding-a-new-fuzzer/#testing-it-out). It can be quite pedantic and you don't want to be failed due to trivial errors.
 
-**Competition** (on 24 February 2023).
+**Pull Request Deadline** (on 17 February 2023).
 * The participants publicly integrate their fuzzers into FuzzBench by submitting a [Pull Request](https://github.com/google/fuzzbench/pulls) and getting it approved for integration. We will only consider fuzzers that passed all CI tests in the PR and that run for at least 30 minutes.
 
 * The primary contact of the participants' team submits a short tool report (up to 2 pages in [IEEE conference format](https://www.ieee.org/conferences/publishing/templates.html); `\documentclass[10pt,conference]{IEEEtran}` without including the compsoc or compsocconf options) describing the technology and ideas behind the submitted fuzzer and the experience of integrating into FuzzBench.
