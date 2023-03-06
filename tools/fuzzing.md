@@ -20,7 +20,8 @@ layout: md
 * 17 Feb'23: First Pull Request deadline (PR must be accepted at FuzzBench).
 * 24 Mar'23: Preliminary results on public benchmarks.
 * 03 Mar'23: Second Pull Request deadline.
-* 10 Mar'23: Tool report deadline.
+* 10 Mar'23: Communicate final evaluation results to participants.
+* 15 Mar'23: Camera-ready tool paper deadline.
 * May'23: Official competition results and tool presentation live at SBFT workshop.
 
 ## Benchmarking Platform
