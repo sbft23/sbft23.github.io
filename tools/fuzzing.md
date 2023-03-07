@@ -21,7 +21,7 @@ layout: md
 * 24 Mar'23: Preliminary results on public benchmarks.
 * 03 Mar'23: Second Pull Request deadline.
 * 10 Mar'23: Communicate final evaluation results to participants.
-* 15 Mar'23: Camera-ready tool paper deadline.
+* 15 Mar'23: Camera-ready tool paper (4 pages, references included) deadline.
 * May'23: Official competition results and tool presentation live at SBFT workshop.
 
 ## Benchmarking Platform
