@@ -12,7 +12,7 @@ layout: default
         <h3>Fuzzing Tools Competition</h3>
         <div class="table-condensed">
             <table class="program-table">
-            {% assign tools = site.data.program.fuzztools | sort: "title" %}
+            {% assign tools = site.data.program.fuzztools%}
             {% for tool in tools %}
             <tr>
                 <td>{{tool.title}}: {{tool.authors}}</td>
@@ -27,7 +27,7 @@ layout: default
         <h3>Research Track</h3>
         <div class="table-condensed">
             <table class="program-table">
-            {% assign papers = site.data.program.researchpapers | sort: "title" %}
+            {% assign papers = site.data.program.researchpapers%}
             {% for paper in papers %}
             <tr>
                 <td>{{paper.title}}: {{paper.authors}}</td>
@@ -42,7 +42,7 @@ layout: default
         <h3>Java Tool Competition</h3>
         <div class="table-condensed">
             <table class="program-table">
-            {% assign javatools = site.data.program.javatools | sort: "title" %}
+            {% assign javatools = site.data.program.javatools%}
             {% for javatool in javatools %}
             <tr>
                 <td>{{javatool.title}}: {{javatool.authors}}</td>
@@ -57,7 +57,7 @@ layout: default
         <h3>CPS Tool Competition</h3>
         <div class="table-condensed">
             <table class="program-table">
-            {% assign cpstools = site.data.program.fuzzPapers | sort: "title" %}
+            {% assign cpstools = site.data.program.fuzzPapers%}
             {% for cpstool in cpstools %}
             <tr>
                 <td>{{cpstool.title}}: {{cpstool.authors}}</td>
