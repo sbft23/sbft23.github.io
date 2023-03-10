@@ -46,7 +46,7 @@
 }
 
 .program-table {
-    align-self: center;
+    /* align-self: center; */
     text-align: left;
 }
 
@@ -81,11 +81,6 @@
     top: 0;
     left: 0;
     z-index: -1;
-}
-
-.text-primary-papers {
-    color: #3e2999 !important;
-    font-weight:400;
 }
 
 .text-primary {
