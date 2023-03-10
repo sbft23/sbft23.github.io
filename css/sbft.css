@@ -45,6 +45,14 @@
     text-align: left;
 }
 
+.program-table td, .paper-name {
+    display:inline;
+    font-size:90%;
+    color: #008c9e;/*color: #f96332;*/
+    min-height: 8px;
+    text-align: left;
+}
+
 .program-table {
     align-self: center;
     text-align: left;
