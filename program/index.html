@@ -17,7 +17,7 @@ layout: default
             {% assign tools = site.data.program.fuzztools%}
             {% for tool in tools %}
             <tr>
-                <td> <h5 class = "text-left text-primary">{{tool.title}}:</h5> {{tool.authors}} </td>
+                <td><b class = "text-left text-primary">{{tool.title}}:</b> {{tool.authors}} </td>
             </tr>
             {% endfor %}
             </table>
@@ -33,7 +33,7 @@ layout: default
             {% assign papers = site.data.program.researchpapers%}
             {% for paper in papers %}
             <tr>
-               <td> <h5 class = "text-left text-primary">{{paper.title}}:</h5>  {{paper.authors}} </td>
+                <td><b class = "text-left text-primary">{{paper.title}}:</b>  {{paper.authors}} </td>
             </tr>
             {% endfor %}
             </table>
@@ -49,7 +49,7 @@ layout: default
             {% assign javatools = site.data.program.javatools%}
             {% for javatool in javatools %}
             <tr>
-                <td> <h5 class = "text-left text-primary">{{javatool.title}}:</h5>  {{javatool.authors}} </td>
+                <td><b class = "text-left text-primary">{{javatool.title}}:</b>  {{javatool.authors}} </td>
             </tr>
             {% endfor %}
             </table>
@@ -65,7 +65,7 @@ layout: default
             {% assign cpstools = site.data.program.cpstools%}
             {% for cpstool in cpstools %}
             <tr>
-                <td><h5 class = "text-left text-primary">{{cpstool.title}}:</h5> {{cpstool.authors}} </td> 
+                <td><b class = "text-left text-primary">{{cpstool.title}}:</b> {{cpstool.authors}} </td> 
             </tr>
             {% endfor %}
             </table>
