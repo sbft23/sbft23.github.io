@@ -83,6 +83,11 @@
     z-index: -1;
 }
 
+.text-primary-papers {
+    color: #3e2999 !important;
+    font-weight: bold;
+}
+
 .text-primary {
     color: #3e2999 !important;
 }
