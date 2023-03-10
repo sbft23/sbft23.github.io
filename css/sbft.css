@@ -50,6 +50,11 @@
     text-align: left;
 }
 
+.accepted-papers-table {
+    align-self: center;
+    text-align: left;
+}
+
 .profile-picture {
     object-fit: cover;
 }
