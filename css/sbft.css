@@ -23,7 +23,7 @@
     text-align: left;
 }
 
-.paper-affiliation {
+/* .paper-affiliation {
     display:inline;
     font-size:90%;
     color: #{{ site.data.template.color.muted }};
@@ -37,7 +37,7 @@
     color: #{{ site.data.template.color.muted }};
     min-height: 10px;
     text-align: left;
-}
+} */
 
 .program-table td, .program-details {
     padding:0 0 0 7px;
@@ -46,7 +46,7 @@
 }
 
 .program-table {
-    /* align-self: center; */
+    align-self: left;
     text-align: left;
 }
 
