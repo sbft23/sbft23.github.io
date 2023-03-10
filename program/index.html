@@ -4,7 +4,69 @@ layout: default
 ---
 <div class="col-md-8 ml-auto mr-auto text-left">
     <div class="section section-team text-left">
-        TBA
+        <!-- TBA -->
+
+    <h2>Accepted Papers and Tools</h2>
+        
+    <div class="container">
+        <h2 class="subtitle text-center">Fuzzing Tools Competition</h2>
+        <div class="table-condensed">
+            <table class="program-table">
+            {% assign tools = site.data.program.fuzzPapers | sort: "name" %}
+            {% for tool in tools %}
+            <tr>
+                <td>{{tool.title}}: {{tool.authors}}</td>
+            </tr>
+            {% endfor %}
+            </table>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h2 class="subtitle text-center">Research Track</h2>
+        <div class="table-condensed">
+            <table class="program-table">
+            {% assign papers = site.data.program.researchPapers | sort: "name" %}
+            {% for paper in papers %}
+            <tr>
+                <td>{{paper.title}}: {{paper.authors}}</td>
+            </tr>
+            {% endfor %}
+            </table>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h2 class="subtitle text-center">Java Tool Competition</h2>
+        <div class="table-condensed">
+            <table class="program-table">
+            {% assign javatools = site.data.program.javatools | sort: "name" %}
+            {% for javatool in javatools %}
+            <tr>
+                <td>{{javatool.title}}: {{javatool.authors}}</td>
+            </tr>
+            {% endfor %}
+            </table>
+        </div>
+    </div>
+    
+    
+    <div class="container">
+        <h2 class="subtitle text-center">CPS Tool Competition</h2>
+        <div class="table-condensed">
+            <table class="program-table">
+            {% assign cpstools = site.data.program.fuzzPapers | sort: "name" %}
+            {% for cpstool in cpstools %}
+            <tr>
+                <td>{{cpstool.title}}: {{cpstool.authors}}</td>
+            </tr>
+            {% endfor %}
+            </table>
+        </div>
+    </div>
+
         <!-- <div class="container">
             <h2 class="subtitle text-center">Accepted Papers & Tools</h2>
             <div class="table-condensed">
