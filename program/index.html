@@ -12,7 +12,7 @@ layout: default
         <h2 class="subtitle text-center">Fuzzing Tools Competition</h2>
         <div class="table-condensed">
             <table class="program-table">
-            {% assign tools = site.data.program.fuzzPapers | sort: "name" %}
+            {% assign tools = site.data.program.fuzztools | sort: "name" %}
             {% for tool in tools %}
             <tr>
                 <td>{{tool.title}}: {{tool.authors}}</td>
@@ -27,7 +27,7 @@ layout: default
         <h2 class="subtitle text-center">Research Track</h2>
         <div class="table-condensed">
             <table class="program-table">
-            {% assign papers = site.data.program.researchPapers | sort: "name" %}
+            {% assign papers = site.data.program.researchpapers | sort: "name" %}
             {% for paper in papers %}
             <tr>
                 <td>{{paper.title}}: {{paper.authors}}</td>
