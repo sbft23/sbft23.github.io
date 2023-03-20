@@ -1,0 +1,87 @@
+---
+title: SBFT'23 Accepted Papers
+layout: default
+---
+<div class="col-md-8 ml-auto mr-auto text-left">
+    <h2>Accepted Papers and Tools</h2>
+
+    <br>
+
+    <div class="container">
+        <h3>Research Track</h3>
+        <div class="table-condensed">
+            <table class="committee-table">
+                {% assign papers = site.data.program.researchpapers | sort: "title" %}
+                {% for paper in papers %}
+                <tr>
+                    <td>
+                        <b class="text-left text-primary">{{paper.title}}</b>
+                        <br />
+                        <span class="text-left text-secondary">{{paper.authors}}</span>
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <h3>Fuzzing Tool Competition</h3>
+        <div class="table-condensed">
+            <table class="committee-table">
+                {% assign tools = site.data.program.fuzztools | sort: "title" %}
+                {% for tool in tools %}
+                <tr>
+                    <td>
+                        <b class="text-left text-primary">{{tool.title}}</b>
+                        <br />
+                        <span class="text-left text-secondary">{{tool.authors}}</span>
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <h3>Java Tool Competition</h3>
+        <div class="table-condensed">
+            <table class="committee-table">
+                {% assign javatools = site.data.program.javatools | sort: "title" %}
+                {% for javatool in javatools %}
+                <tr>
+                    <td>
+                        <b class="text-left text-primary">{{javatool.title}}</b>
+                        <br />
+                        <span class="text-left text-secondary">{{javatool.authors}}</span>
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <h3>CPS Tool Competition</h3>
+        <div class="table-condensed">
+            <table class="committee-table">
+                {% assign cpstools = site.data.program.cpstools | sort: "title"%}
+                {% for cpstool in cpstools %}
+                <tr>
+                    <td>
+                        <b class="text-left text-primary">{{cpstool.title}}</b>
+                        <br />
+                        <span class="text-left text-secondary">{{cpstool.authors}}</span>
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</div>
