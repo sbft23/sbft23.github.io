@@ -127,3 +127,8 @@ body{
 footer{
     margin-top: auto;
 }
+
+.sponsors {
+    display: flex;
+    justify-content: space-between;
+}
