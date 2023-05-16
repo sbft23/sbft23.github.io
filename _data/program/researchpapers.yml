@@ -1,6 +1,7 @@
 
 - title: PASTIS - A Collaborative Approach to Combine Heterogeneous Software Testing Techniques
-  authors: Robin David, Richard Abou Chaaya, Christian 	Heitman
+  authors: Robin David, Richard Abou Chaaya, Christian Heitman
+  slides: /share/pastis.pdf
 
 - title: Continuous Fuzzing - A Study of the Effectiveness and Scalability of Fuzzing in CI/CD Pipelines
   authors: Thijs Klooster, Fatih	Turkmen, Gerben	Broenink, Ruben	Ten Hove, Marcel	Bohme
