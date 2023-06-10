@@ -1,6 +1,10 @@
 ---
 title: SBFT'23 Venue
 layout: default
+gallery:     
+    - /img/social-1.png
+    - /img/social-2.png
+    - /img/social-3.png
 ---
 <div class="col-md-8 ml-auto mr-auto text-left">
 
@@ -18,12 +22,8 @@ layout: default
 </p>
 </div>
 
+{% for image in page.gallery %}
+    <img src="{{ image }}" />
+{% endfor %}
 
----
-layout: social-pics
-title: Photos
-gallery:     
-    - /img/social-1.png
-    - /img/social-2.png
-    - /img/social-3.png
----
+
